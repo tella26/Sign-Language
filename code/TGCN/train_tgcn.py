@@ -117,7 +117,6 @@ if __name__ == "__main__":
     
     subset = 'asl100'
     
-    '''
     csvFilePath_train = r'./data/WLASL100_train_25fps_normalized.csv'
     jsonFilePath = r'./output/data_json.json'
     csv_to_json(csvFilePath_train, jsonFilePath)
@@ -126,9 +125,10 @@ if __name__ == "__main__":
     csvFilePath_val = r'./data/WLASL100_val_25fps_normalized.csv'
     jsonFilePath_val = r'./output/data_val_json.json'
     csv_to_json(csvFilePath_val, jsonFilePath_val)
-    '''
-    jsonFilePath = r'./output/data_json.json'
-    jsonFilePath_val = r'./output/data_val_json.json'
+    
+    #jsonFilePath = r'./output/data_json.json'
+    #jsonFilePath_val = r'./output/data_val_json.json'
+    
     split_file = os.path.join(root, 'data/splits/{}.json'.format(subset))
     # pose_data_root = os.path.join(root, 'data/pose_per_individual_videos')
     pose_data_root = jsonFilePath
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     config_file = os.path.join(root, 'code/TGCN/configs/{}.ini'.format(subset))
     configs = Config(config_file)
 
-    logging.basicConfig(filename='output/{}.log'.format(os.path.basename(config_file)[:-4]), level=logging.DEBUG, filemode='w+')
+    logging.basicConfig(filename='./output/{}.log'.format(os.path.basename(config_file)[:-4]), level=logging.DEBUG, filemode='w+')
 
     logging.info('Calling main.run()')
     run(split_file=split_file, configs=configs, pose_data_root=pose_data_root)
