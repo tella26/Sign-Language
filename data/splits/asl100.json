@@ -1,0 +1,709 @@
+[
+    {
+        "gloss": "computer",
+        "instances": [
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 89,
+                "frame_start": 1,
+                "instance_id": 1,
+                "signer_id": 109,
+                "source": "valencia-asl",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=H-tAzh-nuV8",
+                "variation_id": 0,
+                "video_id": "68028"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 75,
+                "frame_start": 1,
+                "instance_id": 3,
+                "signer_id": 11,
+                "source": "signingsavvy",
+                "split": "train",
+                "url": "https://www.signingsavvy.com/signs/mp4/6/6326.mp4",
+                "variation_id": 1,
+                "video_id": "12328"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 102,
+                "frame_start": 1,
+                "instance_id": 4,
+                "signer_id": 5,
+                "source": "aslu",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=97IwdVSOQho",
+                "variation_id": 1,
+                "video_id": "12329"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 88,
+                "frame_start": 1,
+                "instance_id": 5,
+                "signer_id": 5,
+                "source": "aslu",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=cujhpwWi1yY",
+                "variation_id": 1,
+                "video_id": "12330"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 67,
+                "frame_start": 1,
+                "instance_id": 7,
+                "signer_id": 5,
+                "source": "aslu",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=fY11M3Dxxx0",
+                "variation_id": 0,
+                "video_id": "12331"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 77,
+                "frame_start": 1,
+                "instance_id": 8,
+                "signer_id": 65,
+                "source": "nabboud",
+                "split": "test",
+                "url": "https://www.youtube.com/watch?v=lVo6MByRMHY",
+                "variation_id": 2,
+                "video_id": "12332"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 78,
+                "frame_start": 1,
+                "instance_id": 12,
+                "signer_id": 65,
+                "source": "nabboud",
+                "split": "test",
+                "url": "https://www.youtube.com/watch?v=-wmqgdmwySo",
+                "variation_id": 0,
+                "video_id": "12336"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 62,
+                "frame_start": 1,
+                "instance_id": 13,
+                "signer_id": 56,
+                "source": "spreadthesign",
+                "split": "train",
+                "url": "https://media.spreadthesign.com/video/mp4/13/51378.mp4",
+                "variation_id": 1,
+                "video_id": "12311"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 76,
+                "frame_start": 1,
+                "instance_id": 14,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com/main/c/computer.swf",
+                "variation_id": 1,
+                "video_id": "12337"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 69,
+                "frame_start": 1,
+                "instance_id": 16,
+                "signer_id": 38,
+                "source": "startasl",
+                "split": "train",
+                "url": "https://s3-us-west-1.amazonaws.com/files.startasl.com/asldictionary/computer.mp4",
+                "variation_id": 1,
+                "video_id": "12313"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 38,
+                "frame_start": 1,
+                "instance_id": 17,
+                "signer_id": 4,
+                "source": "signschool",
+                "split": "train",
+                "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/Computer%203-ZIm7kG5ie_M.mp4",
+                "variation_id": 0,
+                "video_id": "12314"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 49,
+                "frame_start": 1,
+                "instance_id": 18,
+                "signer_id": 4,
+                "source": "signschool",
+                "split": "val",
+                "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/Computer%205-wOn7bu44o4s.mp4",
+                "variation_id": 1,
+                "video_id": "12315"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 38,
+                "frame_start": 1,
+                "instance_id": 19,
+                "signer_id": 4,
+                "source": "signschool",
+                "split": "train",
+                "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Computer%201-_2YnCKHJy6U.mp4",
+                "variation_id": 2,
+                "video_id": "12316"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 46,
+                "frame_start": 1,
+                "instance_id": 20,
+                "signer_id": 4,
+                "source": "signschool",
+                "split": "train",
+                "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Computer%202-_HHzYqXw-xU.mp4",
+                "variation_id": 2,
+                "video_id": "12317"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 35,
+                "frame_start": 1,
+                "instance_id": 22,
+                "signer_id": 45,
+                "source": "signschool",
+                "split": "train",
+                "url": "https://signstock.blob.core.windows.net/signschool/videos/db_uploads/SignSchool%20Republic%20of%20Congo-b6U1CIWIPIw.mp4",
+                "variation_id": 2,
+                "video_id": "12319"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 87,
+                "frame_start": 1,
+                "instance_id": 23,
+                "signer_id": 59,
+                "source": "asldeafined",
+                "split": "test",
+                "url": "https://www.asldeafined.com/media/vocabulary/1466901185.5915.mp4",
+                "variation_id": 1,
+                "video_id": "12320"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 36,
+                "frame_start": 1,
+                "instance_id": 24,
+                "signer_id": 109,
+                "source": "asllex",
+                "split": "test",
+                "url": "https://youtu.be/u1xoXux2NaE",
+                "variation_id": 1,
+                "video_id": "67519"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 55,
+                "frame_start": 1,
+                "instance_id": 25,
+                "signer_id": 20,
+                "source": "handspeak",
+                "split": "train",
+                "url": "https://www.handspeak.com/word/c/computer-arm2.mp4",
+                "variation_id": 0,
+                "video_id": "12321"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 53,
+                "frame_start": 1,
+                "instance_id": 26,
+                "signer_id": 20,
+                "source": "handspeak",
+                "split": "train",
+                "url": "https://www.handspeak.com/word/c/computer-arm.mp4",
+                "variation_id": 0,
+                "video_id": "12322"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 55,
+                "frame_start": 1,
+                "instance_id": 27,
+                "signer_id": 20,
+                "source": "handspeak",
+                "split": "train",
+                "url": "https://www.handspeak.com/word/c/computer-head.mp4",
+                "variation_id": 2,
+                "video_id": "12323"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 62,
+                "frame_start": 1,
+                "instance_id": 28,
+                "signer_id": 14,
+                "source": "handspeak",
+                "split": "train",
+                "url": "https://www.handspeak.com/word/c/computer-old2.mp4",
+                "variation_id": 1,
+                "video_id": "12324"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 63,
+                "frame_start": 1,
+                "instance_id": 30,
+                "signer_id": 11,
+                "source": "signingsavvy",
+                "split": "val",
+                "url": "https://www.signingsavvy.com/signs/mp4/6/6011.mp4",
+                "variation_id": 0,
+                "video_id": "12326"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 40,
+                "frame_start": 1,
+                "instance_id": 31,
+                "signer_id": 11,
+                "source": "signingsavvy",
+                "split": "train",
+                "url": "https://www.signingsavvy.com/signs/mp4/6/6012.mp4",
+                "variation_id": 2,
+                "video_id": "12327"
+            }
+        ]
+    },
+    {
+        "gloss": "clothes",
+        "instances": [
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 52,
+                "frame_start": 1,
+                "instance_id": 0,
+                "signer_id": 9,
+                "source": "asl5200",
+                "split": "test",
+                "url": "",
+                "variation_id": 0,
+                "video_id": "11305"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 51,
+                "frame_start": 1,
+                "instance_id": 1,
+                "signer_id": 115,
+                "source": "lillybauer",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=RVnoNW53qFU",
+                "variation_id": 0,
+                "video_id": "68870"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 62,
+                "frame_start": 1,
+                "instance_id": 2,
+                "signer_id": 110,
+                "source": "valencia-asl",
+                "split": "train",
+                "url": "https://www.youtube.com/watch?v=Xmrvvk8l3_w",
+                "variation_id": 0,
+                "video_id": "68024"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 88,
+                "frame_start": 1,
+                "instance_id": 6,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_womens.swf",
+                "variation_id": 0,
+                "video_id": "11329"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 79,
+                "frame_start": 1,
+                "instance_id": 8,
+                "signer_id": 59,
+                "source": "asldeafined",
+                "split": "test",
+                "url": "https://www.asldeafined.com/media/vocabulary/1466899298.7370.mp4",
+                "variation_id": 0,
+                "video_id": "11311"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 55,
+                "frame_start": 1,
+                "instance_id": 9,
+                "signer_id": 20,
+                "source": "handspeak",
+                "split": "train",
+                "url": "https://www.handspeak.com/word/c/clothes.mp4",
+                "variation_id": 0,
+                "video_id": "11312"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 31,
+                "frame_start": 1,
+                "instance_id": 10,
+                "signer_id": 11,
+                "source": "signingsavvy",
+                "split": "train",
+                "url": "https://www.signingsavvy.com/signs/mp4/6/6566.mp4",
+                "variation_id": 0,
+                "video_id": "11313"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 49,
+                "frame_start": 1,
+                "instance_id": 11,
+                "signer_id": 5,
+                "source": "aslu",
+                "split": "val",
+                "url": "https://www.youtube.com/watch?v=06hMAkUdQgg",
+                "variation_id": 0,
+                "video_id": "11314"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 73,
+                "frame_start": 1,
+                "instance_id": 12,
+                "signer_id": 5,
+                "source": "aslu",
+                "split": "val",
+                "url": "https://www.youtube.com/watch?v=15czV0-SagI",
+                "variation_id": 0,
+                "video_id": "11315"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 58,
+                "frame_start": 1,
+                "instance_id": 13,
+                "signer_id": 42,
+                "source": "spreadthesign",
+                "split": "train",
+                "url": "https://media.spreadthesign.com/video/mp4/13/399310.mp4",
+                "variation_id": 0,
+                "video_id": "11309"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 80,
+                "frame_start": 1,
+                "instance_id": 15,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_boys.swf",
+                "variation_id": 0,
+                "video_id": "11317"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 123,
+                "frame_start": 1,
+                "instance_id": 16,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "test",
+                "url": "http://www.aslpro.com//main/c/clothes_designer.swf",
+                "variation_id": 0,
+                "video_id": "11318"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 93,
+                "frame_start": 1,
+                "instance_id": 17,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "val",
+                "url": "http://www.aslpro.com//main/c/clothes_fall.swf",
+                "variation_id": 0,
+                "video_id": "11319"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 92,
+                "frame_start": 1,
+                "instance_id": 18,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_girls.swf",
+                "variation_id": 0,
+                "video_id": "11320"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 87,
+                "frame_start": 1,
+                "instance_id": 20,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_mens.swf",
+                "variation_id": 0,
+                "video_id": "11322"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 89,
+                "frame_start": 1,
+                "instance_id": 22,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_plus_size.swf",
+                "variation_id": 0,
+                "video_id": "11324"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 77,
+                "frame_start": 1,
+                "instance_id": 23,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "val",
+                "url": "http://www.aslpro.com//main/c/clothes_spring.swf",
+                "variation_id": 0,
+                "video_id": "11325"
+            },
+            {
+                "bbox": [
+                    137,
+                    16,
+                    492,
+                    480
+                ],
+                "frame_end": 78,
+                "frame_start": 1,
+                "instance_id": 24,
+                "signer_id": 72,
+                "source": "aslpro",
+                "split": "train",
+                "url": "http://www.aslpro.com//main/c/clothes_summer.swf",
+                "variation_id": 0,
+                "video_id": "11326"
+            }
+        ]
+    }  
+]
