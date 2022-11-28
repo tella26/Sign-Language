@@ -1,0 +1,5 @@
+INFO:root:Calling main.run()
+INFO:root:Class labels are: 
+0 - clothes
+1 - computer
+DEBUG:matplotlib.pyplot:Loaded backend tkagg version unknown.
