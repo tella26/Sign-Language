@@ -117,12 +117,14 @@ if __name__ == "__main__":
     
     subset = 'asl100'
     
-    csvFilePath_train = r'./data/WLASL100_train_25fps_normalized.csv'
+    # csvFilePath_train = r'./data/WLASL100_train_25fps_normalized.csv'
+    csvFilePath_train = r'/content/drive/MyDrive/dataset/Sign-language/WLASL100_train_25fps_normalized.csv' # for google drive
     jsonFilePath = r'./output/data_json.json'
     csv_to_json(csvFilePath_train, jsonFilePath)
     
     # validation path
-    csvFilePath_val = r'./data/WLASL100_val_25fps_normalized.csv'
+    # csvFilePath_val = r'./data/WLASL100_val_25fps_normalized.csv'
+    csvFilePath_val = r'/content/drive/MyDrive/dataset/Sign-language/WLASL100_train_25fps_normalized.csv' # For google drive 
     jsonFilePath_val = r'./output/data_val_json.json'
     csv_to_json(csvFilePath_val, jsonFilePath_val)
     
