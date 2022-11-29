@@ -33,7 +33,7 @@ MANIFEST
 *.manifest
 *.spec
 *.pt
-output/data_json.json
+# output/data_json.json
 *.csv
 
 # Installer logs
