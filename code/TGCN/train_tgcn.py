@@ -26,17 +26,14 @@ def run(split_file, pose_data_root, configs, save_model_to=None):
 
     # setup dataset
     
-    train_dataset = Sign_Dataset(index_file_path=split_file, split=['train', 'val'], pose_root=pose_data_root,
-                                 img_transforms=None, video_transforms=None, num_samples=num_samples)
+    train_dataset = Sign_Dataset(index_file_path=split_file, pose_root=pose_data_root, num_samples = num_samples)
     
     train_data_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=configs.batch_size,
-                                                    shuffle=True)
+                                                    shuffle=False)
 
-    val_dataset = Sign_Dataset(index_file_path=split_file, split='test', pose_root=pose_val_root,
-                               img_transforms=None, video_transforms=None,
-                               num_samples=num_samples,
-                               sample_strategy='k_copies')
-    val_data_loader = torch.utils.data.DataLoader(dataset=val_dataset, batch_size=configs.batch_size,
+    val_dataset = Sign_Dataset(index_file_path=split_file, pose_root=pose_val_root, num_samples = num_samples)
+    
+    val_data_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=configs.batch_size,
                                                   shuffle=True)
 
     logging.info('\n'.join(['Class labels are: '] + [(str(i) + ' - ' + label) for i, label in
@@ -46,7 +43,8 @@ def run(split_file, pose_data_root, configs, save_model_to=None):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # setup the model
-    model = GCN_muti_att(input_feature=num_samples*2, hidden_feature=num_samples*2,
+    print("Loading the TGCN model.....")
+    model = GCN_muti_att(input_feature=2, hidden_feature= 113,
                          num_class=len(train_dataset.label_encoder.classes_), p_dropout=drop_p, num_stage=num_stages).to(device)
 
     # setup training parameters, learning rate, optimizer, scheduler
@@ -62,13 +60,14 @@ def run(split_file, pose_data_root, configs, save_model_to=None):
 
     best_test_acc = 0
     # start training
+    
     for epoch in range(int(epochs)):
         # train, test model
 
-        print('start training.')
+        print('start training....')
         train_losses, train_scores, train_gts, train_preds = train(log_interval, model,
                                                                    train_data_loader, optimizer, epoch)
-        print('start testing.')
+        print('start validating....')
         val_loss, val_score, val_gts, val_preds, incorrect_samples = validation(model,
                                                                                 val_data_loader, epoch,
                                                                                 save_to=save_model_to)
@@ -113,10 +112,10 @@ def run(split_file, pose_data_root, configs, save_model_to=None):
 
 
 if __name__ == "__main__": 
-    root = './'
+    root = '../../'
     
     subset = 'asl100'
-    
+    '''
     # csvFilePath_train = r'./data/WLASL100_train_25fps_normalized.csv'
     csvFilePath_train = r'/content/drive/MyDrive/dataset/Sign-language/WLASL100_train_25fps_normalized.csv' # for google drive
     jsonFilePath = r'./output/data_json.json'
@@ -127,20 +126,21 @@ if __name__ == "__main__":
     csvFilePath_val = r'/content/drive/MyDrive/dataset/Sign-language/WLASL100_train_25fps_normalized.csv' # For google drive 
     jsonFilePath_val = r'./output/data_val_json.json'
     csv_to_json(csvFilePath_val, jsonFilePath_val)
+    '''
+    jsonFilePath = r'../../output/data_json.json'
+    jsonFilePath_val = r'../../output/data_val_json.json'
     
-    #jsonFilePath = r'./output/data_json.json'
-    #jsonFilePath_val = r'./output/data_val_json.json'
-    
-    split_file = os.path.join(root, 'data/splits/{}.json'.format(subset))
+    # split_file = os.path.join(root, 'data/splits/{}.json'.format(subset))
+    split_file = os.path.join(root, 'data/{}.json'.format('class_list'))
     # pose_data_root = os.path.join(root, 'data/pose_per_individual_videos')
     pose_data_root = jsonFilePath
     pose_val_root = jsonFilePath_val
     config_file = os.path.join(root, 'code/TGCN/configs/{}.ini'.format(subset))
     configs = Config(config_file)
 
-    logging.basicConfig(filename='./output/{}.log'.format(os.path.basename(config_file)[:-4]), level=logging.DEBUG, filemode='w+')
+    logging.basicConfig(filename='output/{}.log'.format(os.path.basename(config_file)[:-4]), level=logging.DEBUG, filemode='w+')
 
     logging.info('Calling main.run()')
     run(split_file=split_file, configs=configs, pose_data_root=pose_data_root)
     logging.info('Finished main.run()')
-    # utils.plot_curves()
+    utils.plot_curves()

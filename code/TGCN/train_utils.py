@@ -18,7 +18,7 @@ def train(log_interval, model, train_loader, optimizer, epoch):
     N_count = 0  # counting total trained sample in one epoch
     for batch_idx, data in enumerate(train_loader):
         # X, y, video_ids = data
-        X, y = data
+        X, y = data[0], data[2]
         # distribute data to device
         X, y = X.to(device), y.to(device).view(-1, )
 
@@ -80,23 +80,24 @@ def validation(model, test_loader, epoch, save_to):
     with torch.no_grad():
         for batch_idx, data in enumerate(test_loader):
             # distribute data to device
-            X, y, video_ids = data
+            # X, y, video_ids = data
+            X, y = data[0], data[2]
             """Device Selection"""
             device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
             X, y = X.to(device), y.to(device).view(-1, )
-
+            
             all_output = []
 
             stride = X.size()[2] // num_copies
 
             for i in range(num_copies):
-                X_slice = X[:, :, i * stride: (i+1) * stride]
+                X_slice = X[:, :, i * stride: (i+2)]
                 output = model(X_slice)
                 all_output.append(output)
 
             all_output = torch.stack(all_output, dim=1)
             output = torch.mean(all_output, dim=1)
-
+            
             # output = model(X)  # output has dim = (batch, number of classes)
 
             # loss = F.cross_entropy(pool_out, y, reduction='sum')
@@ -108,7 +109,6 @@ def validation(model, test_loader, epoch, save_to):
             # collect all y and y_pred in all batches
             all_y.extend(y)
             all_y_pred.extend(y_pred)
-            all_video_ids.extend(video_ids)
             all_pool_out.extend(output)
 
     # this computes the average loss on the BATCH
@@ -148,7 +148,7 @@ def validation(model, test_loader, epoch, save_to):
 
 
 def compute_loss(out, gt):
-    gt = torch.tensor(gt,dtype= torch.long)
+    # gt = torch.tensor(gt,dtype= torch.long)
     ce_loss = F.cross_entropy(out, gt)
 
     return ce_loss
